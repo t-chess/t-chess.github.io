@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Postavy a herci filmu Fétiche">
+        <meta name="author" content="Tatiana Chesebieva">
+        <title>Postavy a herci | Fétiche</title>
+        <link rel="icon" href="media/favicon.png" type="image/x-icon" sizes="16x16" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <header class="nav" id="nav">
+            <a onclick="menu()" id="nav-icon"> &#9776; </a>
+            <a href="index.html">Úvod</a>
+            <a href="cast.html" id="active">Postavy a herci</a>
+            <a href="crew.html">Tvůrci</a>
+            <a href="donate.html">Podpořit film</a>
+            <a href="gallery.html">Fotogalerie</a>
+            <a href="https://www.instagram.com/fetiche.film/" target="_blank">Náš Instagram</a>
+
+        </header>
+        <main id="cast_main">
+            <h1>Postavy a herci</h1>
+            <div id="cast">
+            <section class="character">
+                <img src="media/martin.jpg" alt="Martin Hlubocký v roli Davida" class="actor-img">
+                <h2><a href="https://actorsmap.cz/en/herec/martin-hlubocky/" target="_blank">Martin Hlubocký</a><sup> v roli Davida </sup></h2>
+            </section>
+            <section class="character">
+                <img src="media/magda.jpg" alt="Magda Sinatra v roli Moniky" class="actor-img">
+                <h2><a href="https://www.facebook.com/magdalena.stellabridge" target="_blank">Magda Sinatra</a><sup> v roli Moniky </sup></h2>
+            </section>
+            <section class="character">
+                <img src="media/lucie.jpeg" alt="Lucie Volhejnová v roli baristky" class="actor-img">
+                <h2><a href="https://actorsmap.cz/en/herec/lucie-volhejnova/" target="_blank">Lucie Volhejnová</a><sup> v roli baristky </sup></h2>
+            </section>
+            <section class="character">
+                <img src="media/liza.jpg" alt="Liza Ermakova v roli prodavačky" class="actor-img">
+                <h2><a href="https://www.facebook.com/profile.php?id=100008595572540" target="_blank">Liza Ermakova</a><sup> v roli prodavačky </sup></h2>
+            </section>
+            <section class="character">
+                <h2>Také hráli</h2>
+                <p>Polina Bobyleva, Adiya Dikanbaeva, Ekaterina Semyashkina, Martina Pavlínová, Kristýna Hušková</p>
+            </section>
+            </div>
+        </main>
+        <footer>
+            <p>Film vyrobila <a href="https://kme.vse.cz/">Katedra multimédií</a> <a href="https://www.vse.cz/">Vysoké školy ekonomické v Praze.</a></p>
+        </footer>
+        <script>
+            function menu () {
+                var nav = document.getElementById("nav");
+                if (nav.className == "nav" ) {
+                    nav.className += " open";
+                } else {
+                    nav.className = "nav";
+                }
+            }
+        </script>
+    </body>
+</html>

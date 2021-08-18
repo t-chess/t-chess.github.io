@@ -1,0 +1,472 @@
+/* All pages */
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+    max-width: 1900px;
+    line-height: 1.5;
+}
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+h1 {
+    font-size: 42px;
+}
+h2 {
+    font-size: 28px;
+}
+header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    padding: 0 25px 0 25px;
+}
+header a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px;
+    color: black;
+}
+header a:hover {
+    text-decoration: underline;
+}
+#active {
+    text-decoration: underline;
+    color: #c70697;
+}
+#nav-icon {
+    display: none;
+}
+footer {
+    background-color: rgb(199, 199, 199);
+    height: 100px;
+    margin-top: 50px;
+    position: relative;
+}
+footer p {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    text-align: center;
+    color: white;
+}
+footer p a {
+    color: white;
+}
+
+/* Homepage */
+#intro {
+    background-image: url("media/plakat.png");
+    height: 85vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#intro img {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    width: 20vw;
+}
+#intro p {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 38%;
+    text-align: center;
+    background-color: #270130;
+    color: white;
+    width: 450px;
+    padding: 5px;
+}
+#homepage_main h2 {
+    text-align: center;
+}
+#about, #promo {
+    position: relative;
+    border-bottom: 1px black solid;
+    padding: 0 175px 75px 175px;
+}
+#plot {
+    line-height: 2;
+    width: 50vw;
+}
+#premiere {
+    position: absolute;
+    margin: auto;
+    top: 15%;
+    right: 10%;
+    text-align: center;
+    background-color: #c70697;
+    color: white;
+    padding: 30px;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+#fest {
+    position: absolute;
+    margin: auto;
+    top: 40%;
+    right: 20%;
+    text-align: center;
+    background-color: #c70697;
+    color: white;
+    padding: 30px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+#fest a {
+    color: #270130;
+}
+#promo iframe {
+    display: block;
+    margin: 0 auto;
+}
+#sponsors {
+    position: relative;
+}
+#sponsors-icons {
+    padding-bottom: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#sponsors button {
+    all: unset;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+#sponsors button a {
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    width: 150px;
+    padding: 15px;
+    border: 1.5px black solid;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#sponsors button a:hover {
+    text-decoration: underline;
+    background-color: #c70697;
+    border-color: #c70697;
+    color: white;
+}
+
+/* Cast */
+#cast_main {
+    padding: 0 100px 0 100px;
+}
+#cast_main h1 {
+    text-align: center;
+}
+#cast h2 {
+    font-size: 24px;
+}
+#cast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.character {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex: 50%;
+    padding-bottom: 25px;
+}
+.actor-img {
+    border-radius: 50%;
+    width: 200px;
+    padding-right: 10px;
+}
+.character a {
+    color: #c70697;
+}
+/* Crew */
+#crew_cover {
+    background-image: url("media/tym.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#crew_main h1 {
+    text-align: center;
+}
+#crew_main p {
+    padding: 15px 50px 15px 50px;
+    text-align: center;
+}
+#crew_main p a {
+    color: #c70697;
+}
+#sponsors h2 {
+    text-align: center;
+}
+#crew_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 100px 0 100px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Startovac */
+#donate_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#donate_main h2 {
+    text-align: center;
+}
+#donate_main section {
+    border-bottom: 1px black solid;
+    padding: 0 150px 25px 150px;
+}
+#donate_main li {
+    line-height: 2;
+}
+#startovac {
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px 0 15px 0;
+    background-color: #c70697;
+    border: 2px solid #c70697;
+    color: white;
+    text-decoration: underline;
+    border-radius: 10px;
+    text-align: center;
+}
+#startovac:hover {
+    background-color: white;
+    color: #c70697;
+    cursor: pointer;
+}
+
+#odmeny {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#odmeny img {
+    margin: 15px;
+}
+#donate_main p {
+    text-align: center;
+}
+/* Gallery */
+#gallery_main h1 {
+    text-align: center;
+}
+#gallery_container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 10px;
+}
+.slides img {
+    width: 1000px;
+}
+.slides {
+    display: none;
+}
+#prev_button, #next_button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#next_button {
+    right: 0;
+}
+#prev_button:hover, #next_button:hover {
+    background-color: black;
+}
+.caption {
+    color: white;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Smaller screen */
+@media screen and (max-width:800px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #intro {
+        height: 60vh;
+    }
+    header a{
+        display: none;
+    }
+    #nav-icon {
+        display: block;
+        align-self: flex-end;
+    }
+    .open {
+        height: 350px;
+    }
+    .open a {
+        display: block;
+    }
+    #intro img {
+        width: 50vw;
+        bottom: 55%;
+    }
+    #intro p {
+        width: 350px;
+    }
+    #about, #promo {
+        padding: 15px;
+    }
+    #plot {
+        width: 90vw;
+    }
+    #premiere, #fest {
+        position: inherit;
+    }
+    #sponsors-icons {
+        flex-direction: column;
+    }
+    #cast_main {
+        padding: 0 20px 0 20px;
+    }
+    #crew_cover {
+        height: 30vh;
+    }
+    #crew_container {
+        padding: 25px;
+    }
+    .slides img {
+        width: 450px;
+    }
+    iframe {
+        height: 210px;
+        width: 373px;
+    }
+    #donate_main section {
+        padding: 0;
+    }
+    #startovac {
+        font-size: 18px;
+    }
+    #odmeny img {
+        margin: 0;
+    }
+}
+@media print {
+    header {
+        display: none;
+    }
+    body {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    #premiere, #fest {
+        position: relative;
+        left: 0;
+        width: 500px;
+        padding: 5px;
+        margin: 5px;
+    }
+    div, p {
+        padding: 50;
+        margin: 50;
+    }
+    #about {
+        padding: 0;
+    }
+    #plot {
+        width: 100vw;
+    }
+    #sponsors button {
+        display: none;
+    }
+    #intro, #promo {
+        display: none;
+    }
+    .character img {
+        width: 100px;
+    }
+    #crew_cover {
+        display: none;
+    }
+    #crew_container {
+        padding: 0;
+        justify-content: center;
+    }
+    .team i {
+        display: none;
+    }
+    #donate_main section {
+        padding: 0;
+    }
+    #odmeny img {
+        width: 150px;
+    }
+    #startovac {
+        background-color: white;
+        color: black;
+        border: none;
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Fotogalerie filmu Fétiche">
+        <meta name="author" content="Tatiana Chesebieva">
+        <title>Fotogalerie | Fétiche</title>
+        <link rel="icon" href="media/favicon.png" type="image/x-icon" sizes="16x16" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <header class="nav" id="nav">
+            <a onclick="menu()" id="nav-icon"> &#9776; </a>
+            <a href="index.html">Úvod</a>
+            <a href="cast.html">Postavy a herci</a>
+            <a href="crew.html">Tvůrci</a>
+            <a href="donate.html">Podpořit film</a>
+            <a href="gallery.html" id="active">Fotogalerie</a>
+            <a href="https://www.instagram.com/fetiche.film/" target="_blank">Náš Instagram</a>
+        </header>
+        <main id="gallery_main">
+            <h1>Fotogalerie</h1>
+            <div id="gallery_container">
+                <div class="slides">
+                    <img src="media/gallery1.jpg">
+                    <p class="caption">První natáčecí den - Václavské náměstí, Praha</p>
+                </div>
+                <div class="slides">
+                    <img src="media/gallery2.jpg">
+                    <p class="caption">První natáčecí den - Václavské náměstí, Praha</p>
+                </div>
+                <div class="slides">
+                    <img src="media/gallery3.jpg">
+                    <p class="caption">První natáčecí den - Václavské náměstí, Praha</p>
+                </div>
+                <div class="slides">
+                    <img src="media/gallery4.jpg">
+                    <p class="caption">První natáčecí den - Václavské náměstí, Praha</p>
+                </div>
+                <div class="slides">
+                    <img src="media/gallery5.jpg">
+                    <p class="caption">Druhý natáčecí den - Smetanovo nábřeží, Praha</p>
+                </div>
+                <div class="slides">
+                    <img src="media/gallery6.jpg">
+                    <p class="caption">Druhý natáčecí den - Smetanovo nábřeží, Praha</p>
+                </div>
+                <div class="slides">
+                    <img src="media/gallery7.jpg">
+                    <p class="caption">Třetí natáčecí den - Žižkárna, České Budějovice</p>
+                </div>
+                <div class="slides">
+                    <img src="media/gallery8.jpg">
+                    <p class="caption">Třetí natáčecí den - Žižkárna, České Budějovice</p>
+                </div>
+                <div class="slides">
+                    <img src="media/gallery9.jpg">
+                    <p class="caption">Třetí natáčecí den - Žižkárna, České Budějovice</p>
+                </div>
+                <a id="prev_button" onclick="slide(-1)">&#10094;</a>
+                <a id="next_button" onclick="slide(1)">&#10095;</a>
+            </div>
+        </main>
+        <footer>
+            <p>Film vyrobila <a href="https://kme.vse.cz/">Katedra multimédií</a> <a href="https://www.vse.cz/">Vysoké školy ekonomické v Praze.</a></p>
+        </footer>
+        <script>
+            var slideNum = 1;
+            slide(slideNum);
+            function slide(n){
+                n += slideNum;
+                slideNum = n;
+                var i;
+                var slides = document.getElementsByClassName("slides");
+                if (n > slides.length) {slideNum = 1;}
+                if (n < 1) {slideNum = slides.length;}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideNum-1].style.display = "block";
+            } 
+            function menu () {
+                var nav = document.getElementById("nav");
+                if (nav.className == "nav" ) {
+                    nav.className += " open";
+                } else {
+                    nav.className = "nav";
+                }
+            }
+        </script>
+    </body>
+</html>

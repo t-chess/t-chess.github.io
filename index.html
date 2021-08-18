@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Webové stránky krátkého studentského filmu Fétiche">
+        <meta name="author" content="Tatiana Chesebieva">
+        <title>Fétiche - studentský film</title>
+        <link rel="icon" href="media/favicon.png" type="image/x-icon" sizes="16x16" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <header class="nav" id="nav">
+            <a onclick="menu()" id="nav-icon"> &#9776; </a>
+            <a href="#" id="active">Úvod</a>
+            <a href="cast.html">Postavy a herci</a>
+            <a href="crew.html">Tvůrci</a>
+            <a href="donate.html">Podpořit film</a>
+            <a href="gallery.html">Fotogalerie</a>
+            <a href="https://www.instagram.com/fetiche.film/" target="_blank">Náš Instagram</a>
+        </header>
+        <main id="homepage_main">
+            <div id="intro">
+                <img src="media/logo.png" alt="Logotyp Fétiche">
+                <p>Krátký studentský film o lásce, fetiši a krásných botách.</p>
+            </div>
+            <div id="about">
+                <h1>Fétiche</h1>
+                <p id="plot"><i>&nbsp;&nbsp;"David je hezký a elegantní muž, který si ale myslí, že atraktivní vzhled není podstatou pro výběr partnerky, dokonce obvyklá šedá myška může strčit do srdce může, díky jedné jediné obyčejné věci. Ještě víc než slečny má rád jejich obuv - vysoké podpatky a lodičky. Má pro ně takovou slabost, že je schopen pro krásný pár přeběhnout celý Vaclavák během několika vteřin! Ale fetišistský život Davida se úplně mění v momentě kdy potká Moniku..."</i></p>
+                <p id="premiere">Premiéra na jaře 2021</p>
+                <p id="fest">Film je účastníkem festivalu <a href="https://www.multifest.cz/">MultiFest</a></p>
+            </div>
+            <div id="promo">
+                <h2>Promo</h2>
+                <iframe width="1008" height="567" src="https://www.youtube.com/embed/JOF8OgxGXdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="sponsors">
+                <h2>Sponzoři</h2>
+                <div id="sponsors-icons">
+                    <a href="http://smetanaq.cz/" target="_blank"><img src="media/smetanaq.png" alt="SmetanaQ" width="250px"></a>
+                    <a href="https://www.myfoodplace.cz/" target="_blank"><img src="media/myfoodplace.png" alt="My Food Place" width="200px"></a>
+                    <a href="https://jannisfashion.cz" target="_blank"><img src="media/jannis.png" alt="Jannis Fashion" width="150px"></a>
+                </div>
+                <button type="button"><a href="donate.html">Podpořit film</a></button>
+            </div>
+        </main>
+        <footer>
+            <p>Film vyrobila <a href="https://kme.vse.cz/">Katedra multimédií</a> <a href="https://www.vse.cz/">Vysoké školy ekonomické v Praze.</a></p>
+        </footer>
+        <script>
+            function menu () {
+                var nav = document.getElementById("nav");
+                if (nav.className == "nav" ) {
+                    nav.className += " open";
+                } else {
+                    nav.className = "nav";
+                }
+            }
+        </script>
+    </body>
+</html>

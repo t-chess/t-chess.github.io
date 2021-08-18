@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Podpořit film Fétiche">
+        <meta name="author" content="Tatiana Chesebieva">
+        <title>Podpořit | Fétiche</title>
+        <link rel="icon" href="media/favicon.png" type="image/x-icon" sizes="16x16" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <header class="nav" id="nav">
+            <a onclick="menu()" id="nav-icon"> &#9776; </a>
+            <a href="index.html">Úvod</a>
+            <a href="cast.html">Postavy a herci</a>
+            <a href="crew.html">Tvůrci</a>
+            <a href="donate.html" id="active">Podpořit film</a>
+            <a href="gallery.html">Fotogalerie</a>
+            <a href="https://www.instagram.com/fetiche.film/" target="_blank">Náš Instagram</a>
+        </header>
+        <main id="donate_main">
+            <h1>Jak podpořit náš film</h1>
+            <section>
+                <h2>Na co potřebujeme vaší podporu?</h2>
+                <ul>
+                    <li><b>Lokace</b> - pro náš film jsme vybrali nejlepší lokace napřič celé ČR - od obchodu na Václavském náměstí až po studií v Českých Budějovicích.</li>
+                    <li><b>Technika</b> - chceme mít hezké záběry a čistý zvuk, proto jsme vypůjčili kvalitní techniku včetně kamery, mikrofonů, světel, stativu atd.</li>
+                    <li><b>Rekvezity a kostýmy</b> - kdyby podpatky rostly na stromech žil by David v lese... Reálně to tak není, a proto jsme sháněli podpatky po celé Praze a kupovali dálší rekvezity.</li>
+                    <li><b>Doprava</b> - chodit po Práze celý den v podpatcích může jenom fetišista, my ale dopravu na natáčení zajistili autem.</li>
+                </ul>
+            </section>
+            <h2>Jaké máme odměny?</h2>
+            <section id="odmeny">
+                <figure>
+                    <img src="media/placky.jpg" alt="Odměna - set placek" class="reward-img">
+                    <figcaption>Set placek</figcaption>
+                </figure>
+                <figure>
+                    <img src="media/poster.png" alt="Odměna - plakát" class="reward-img">
+                    <figcaption>Plakát A2/A3</figcaption>
+                </figure>
+                <figure>
+                    <img src="media/shopper.png" alt="Odměna - shopper" class="reward-img">
+                    <figcaption>Shopperka - 1. varianta</figcaption>
+                </figure>
+                <figure>
+                    <img src="media/shopper2.png" alt="Odměna - shopper" class="reward-img">
+                    <figcaption>Shopperka - 2. varianta</figcaption>
+                </figure>
+            </section>
+            <button type="button" id="startovac" onclick="window.open('https://www.startovac.cz/projekty/fetiche-film', '_blank')" formtarget="_blank">Podpořit náš film lze na platformě Startovač</button>
+            <p><b>Moc děkujeme všem za podporu!</b><br><i>-Fétiche crew-</i></p>
+        </main>
+        <footer>
+            <p>Film vyrobila <a href="https://kme.vse.cz/">Katedra multimédií</a> <a href="https://www.vse.cz/">Vysoké školy ekonomické v Praze.</a></p>
+        </footer>
+        <script>
+            function menu () {
+                var nav = document.getElementById("nav");
+                if (nav.className == "nav" ) {
+                    nav.className += " open";
+                } else {
+                    nav.className = "nav";
+                }
+            }
+        </script>
+    </body>
+</html>
